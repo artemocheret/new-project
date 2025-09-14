@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <!-- <div class="photo">
+      <img
+        src="./src/img/basket-desktop.jpg"
+        alt="Basket"
+        class="photo-img"
+        srcset="
+          ./src/img/basket-desktop.jpg    1x,
+          ./src/img/basket-desktop@2x.jpg 2x
+        "
+      />
+    </div> -->
+
+    <div class="photo">
+      <picture>
+        <source
+          srcset="
+            ./src/img/basket-desktop.jpg    1x,
+            ./src/img/basket-desktop@2x.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./src/img/basket-tablet.jpg    1x,
+            ./src/img/basket-tablet@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./src/img/basket-mobile.jpg    1x,
+            ./src/img/basket-mobile@2x.jpg 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img src="./src/img/basket-desktop.jpg" alt="Basket" />
+      </picture>
+    </div>
+  </body>
+</html>
